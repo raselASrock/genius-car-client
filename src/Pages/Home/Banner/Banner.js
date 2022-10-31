@@ -12,8 +12,13 @@ const Banner = () => {
     <div className="carousel w-full">
       <div id="slide1" className="carousel-item relative w-full">
         <img src={img1} alt="" className="w-full" />
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" className="btn btn-circle">
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4">
+          <h2 className="text-6xl font-bold text-white">
+            Affordable <br /> Price For Car <br /> Servicing
+          </h2>
+        </div>
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+          <a href="#slide4" className="btn btn-circle btn-outline btn-warning mr-5">
             ❮
           </a>
           <a href="#slide2" className="btn btn-circle">
@@ -45,7 +50,7 @@ const Banner = () => {
       </div>
       <div id="slide4" className="carousel-item relative w-full">
         <img src="https://placeimg.com/800/200/arch" className="w-full" />
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
           <a href="#slide3" className="btn btn-circle">
             ❮
           </a>
