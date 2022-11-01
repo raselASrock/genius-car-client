@@ -6,12 +6,15 @@ import img3 from '../../../assets/images/banner/3.jpg'
 import img4 from '../../../assets/images/banner/4.jpg'
 import img5 from '../../../assets/images/banner/5.jpg'
 import img6 from '../../../assets/images/banner/6.jpg'
+import './Banner.css'
 
 const Banner = () => {
   return (
     <div className="carousel w-full">
       <div id="slide1" className="carousel-item relative w-full">
+        <div className="carousel-img">
         <img src={img1} alt="" className="w-full" />
+        </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4">
           <h2 className="text-6xl font-bold text-white">
             Affordable <br /> Price For Car <br /> Servicing
