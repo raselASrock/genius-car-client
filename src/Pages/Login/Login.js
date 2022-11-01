@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img from  '../../assets/images/login/login.svg'
 
 const Login = () => {
+
+    const handleLogin = event =>{
+        event.preventDefault()
+    }
   return (
     <div className="hero w-full my-20">
       <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
@@ -10,7 +15,7 @@ const Login = () => {
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
         <h1 className="text-5xl text-center text-orange-600 font-bold">Login now!</h1>
-          <div className="card-body">
+          <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -37,9 +42,10 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+                <input className="btn btn-outline btn-success" type="submit" value="Login" />
             </div>
-          </div>
+          </form>
+          <p className="text-center mb-2 font-semibold">New to Genius Car ? <Link className="text-orange-600" to='/signup'>Register</Link></p>
         </div>
       </div>
     </div>
