@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
 
     const menuItems = <>
-    <li className="font-semibold"><Link to='/'>Home</Link></li>
-    <li className="font-semibold"><Link to='/login'>LogIn</Link></li>
+    <li className="font-semibold text-orange-600"><Link to='/'>Home</Link></li>
+    <li className="font-semibold text-orange-600"><Link to='/login'>LogIn</Link></li>
+    <li className="font-semibold text-orange-600"><Link to='/signup'>SignUp</Link></li>
     </>
 
   return (
