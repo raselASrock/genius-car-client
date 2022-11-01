@@ -22,6 +22,7 @@ const Login = () => {
               </label>
               <input
                 type="text"
+                name="email"
                 placeholder="email"
                 className="input input-bordered"
               />
@@ -32,6 +33,7 @@ const Login = () => {
               </label>
               <input
                 type="text"
+                name="password"
                 placeholder="password"
                 className="input input-bordered"
               />
@@ -42,7 +44,7 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-                <input className="btn btn-outline btn-success" type="submit" value="Login" />
+                <input className="btn btn-error" type="submit" value="Login" />
             </div>
           </form>
           <p className="text-center mb-2 font-semibold">New to Genius Car ? <Link className="text-orange-600" to='/signup'>Register</Link></p>

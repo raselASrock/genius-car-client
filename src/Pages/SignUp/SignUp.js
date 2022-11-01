@@ -16,17 +16,31 @@ const SignUp = () => {
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <h1 className="text-5xl text-center text-orange-600 font-bold">
-            Login now!
+            SignUp
           </h1>
           <form onSubmit={handleSignUp} className="card-body">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Name</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                className="input input-bordered"
+                required
+              />
+            </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
               <input
-                type="text"
+                type="email"
+                name="email"
                 placeholder="email"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -35,27 +49,24 @@ const SignUp = () => {
               </label>
               <input
                 type="text"
+                name="password"
                 placeholder="password"
                 className="input input-bordered"
+                required
               />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
             </div>
             <div className="form-control mt-6">
               <input
-                className="btn btn-outline btn-success"
+                className="btn  btn-error"
                 type="submit"
-                value="Login"
+                value="SignUp"
               />
             </div>
           </form>
           <p className="text-center mb-2 font-semibold">
-            New to Genius Car ?{" "}
-            <Link className="text-orange-600" to="/signup">
-              Register
+            Already have an account ?{" "}
+            <Link className="text-orange-600" to="/login">
+              LogIn
             </Link>
           </p>
         </div>
